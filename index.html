@@ -14,39 +14,56 @@
   <!-- link to style sheet -->
   <link rel="stylesheet" href="/public/style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 </head>
 <body>
-<div class="introduction">
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-    <h1 class="main-header">Kimberly Costes</h1>
-    <h2 class="sub-header">Software Engineer & Designer</h2>
-  </header>
 
-  <section id="about">
-    <!-- about me paragraph -->
-    <p class="about-text">Hi! I am a developer with a love for front-end development, UI/UX, and data visualization.
-      I’ve always believed that functional things should also be beautiful, and that belief is
-      what drew me to this intersection of art and code. I grew up deeply in tune with my artistic
-      side, and now I bring that creativity into the way I design interfaces, build interactions,
-      and present information. I recently graduated with a B.S. in Computer Science from Arizona State
-      University and am currently working toward my master’s degree to keep growing both technically
-      and creatively.
-    </p>
-  </section>
+<div class="panel" data-color="cream">
+  <div class="introduction">
+    <header class="navbar-header">
+      <nav class="navbar">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <header class="hero-header">
+      <h1 class="name-header">Kimberly Costes</h1>
+      <h2 class="title-header">Software Engineer & Designer</h2>
+    </header>
+
+    <section id="about">
+      <!-- about me paragraph -->
+      <p class="about-text">Hi! I am a developer with a love for front-end development, UI/UX, and data visualization.
+        I’ve always believed that functional things should also be beautiful, and that belief is
+        what drew me to this intersection of art and code. I grew up deeply in tune with my artistic
+        side, and now I bring that creativity into the way I design interfaces, build interactions,
+        and present information. I recently graduated with a B.S. in Computer Science from Arizona State
+        University and am currently working toward my master’s degree to keep growing both technically
+        and creatively.
+      </p>
+    </section>
+  </div>
+  <img src="/public/images/matcha_mug-removebg-preview.png" alt="Spinning Matcha" class="spin-matcha" />
 </div>
 
 <main>
-  <section id="skills"></section>
-  <section id="projects"></section>
-  <section id="contact"></section>
+  <div class="panel" data-color="brown">
+    <section id="skills">
+      <h1 class="skills-header">What do I bring to the table?</h1>
+    </section>
+  </div>
+
+  <div class="panel" data-color="midnight-purple">
+    <section id="projects"></section>
+  </div>
+
+  <div class="panel" data-color="night-red">
+    <section id="contact"></section>
+  </div>
 </main>
 <!-- link to js -->
 <script type="module" src="/src/main.js"></script>
